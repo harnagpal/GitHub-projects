@@ -1,5 +1,5 @@
 
-setwd("D:/Harish/R practice projects")
+setwd("D:\Harish\R practice projects\GitHub projects")
 getwd()
 
 # load packages
@@ -43,4 +43,5 @@ IndiaMap +
   geom_point(aes(x=lon, y=lat, col = city), data=India_pops_data, 
              alpha=0.4, size = India_pops_data$popultion*0.000002) + 
   scale_size_continuous(range=range(India_pops_data$popultion)) +
-  scale_colour_manual(values = India_pops_data$city) 
+  scale_colour_manual(values = India_pops_data$city) +
+  labs(title = "Top 10 Indian cities with maximum population as in 2018 ")
